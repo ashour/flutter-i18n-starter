@@ -1,8 +1,13 @@
 # flutter_i18n_starter
 
-A new Flutter project.
+A starter project for a PhraseApp Flutter i18n tutorial.
 
 ## Getting Started
 
-For help getting started with Flutter, view our online
+For help getting started with Flutter, view the online
 [documentation](https://flutter.io/).
+
+## Resources
+
+For i18n / l10n Development Tutorials and more, see the
+[PhraseApp blog](https://phraseapp.com/blog/).
