@@ -23,7 +23,16 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
+        centerTitle: false,
         elevation: 0.0,
+        actions: <Widget>[
+          Center(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              child: Text('${sortedContacts.length} contacts'),
+            ),
+          ),
+        ],
       ),
       body: ListView.builder(
         itemCount: sortedContacts.length,

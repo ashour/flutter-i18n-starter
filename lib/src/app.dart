@@ -5,7 +5,7 @@ import 'screens/home_screen.dart';
 import 'shared_state/contacts_provider.dart';
 
 class App extends StatelessWidget {
-  static const String title = 'Stay in Touch (i18n Playground)';
+  static const String title = 'Stay in Touch (i18n Demo)';
 
   @override
   Widget build(BuildContext context) {

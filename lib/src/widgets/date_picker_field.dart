@@ -43,6 +43,14 @@ class _DatePickerFieldState extends State<DatePickerField> {
     );
   }
 
+  _onDateSelected(DateTime selected) {
+    setState(() {
+      _selectedDateTime = selected;
+    });
+
+    widget.onDateSelected(selected);
+  }
+
   _showDatePicker() {
     final now = DateTime.now();
 
@@ -53,12 +61,6 @@ class _DatePickerFieldState extends State<DatePickerField> {
       // set maximum date, somewhat arbitrarily,
       // at ~5 years from today
       lastDate: now.add(Duration(days: 365 * 5)),
-    ).then((selected) {
-      setState(() {
-        _selectedDateTime = selected;
-      });
-
-      widget.onDateSelected(selected);
-    });
+    ).then(_onDateSelected);
   }
 }
