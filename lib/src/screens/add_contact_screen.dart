@@ -37,12 +37,16 @@ class _AddContactScreenState extends State<AddContactScreen> {
             children: <Widget>[
               WordFormField(
                 labelText: 'Name',
-                onSaved: (val) => _name = val,
+                onSaved: (val) => setState(() {
+                      _name = val;
+                    }),
               ),
               Container(margin: EdgeInsets.only(bottom: 16.0)),
               DatePickerField(
                 title: 'Contact next at',
-                onDateSelected: (selected) => _contactNextAt = selected,
+                onDateSelected: (selected) => setState(() {
+                      _contactNextAt = selected;
+                    }),
               ),
             ],
           ),
