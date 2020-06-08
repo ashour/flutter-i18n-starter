@@ -1,3 +1,7 @@
+**⚠️ This repo is no longer maintained! Please visit https://github.com/PhraseApp-Blog/flutter-i18n-starter for the up-to-date repo.**
+
+---
+
 # flutter_i18n_starter
 
 A starter project for a PhraseApp Flutter i18n tutorial.
